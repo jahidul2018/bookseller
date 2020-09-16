@@ -26,7 +26,7 @@
             @include('frontend.partials.headerNav')
                     <!-- End Header Area -->
             @include('frontend.partials.search')
-            @include('frontend.pages.products.partials.navcart')
+            @include('frontend.partials.navcart')
                     <!-- Start Slider Area -->
 
             @yield('content')

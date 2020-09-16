@@ -55,21 +55,21 @@
                             <!-- Start Product View -->
                             <div class="row">
                                 <div class="shop__grid__view__wrap">
-
+                                      <!-- Start Product grid-View -->
                                     <div role="tabpanel" id="grid-view" class="single-grid-view tab-pane fade in active clearfix">
                                         <!-- Start Single Product -->
                                         <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
                                             <div class="category">
                                                 <div class="ht__cat__thumb">
-                                                    <a href="product-details.html">
+                                                    <a href="{{ route('product-details') }}">
                                                         <img src="frontend/images/product/1.jpg" alt="product images">
                                                     </a>
                                                 </div>
                                                 <div class="fr__hover__info">
                                                     <ul class="product__action">
-                                                        <li><a href="wishlist.html"><i class="icon-heart icons"></i></a></li>
+                                                        <li><a href="{{ route('wishlist') }}"><i class="icon-heart icons"></i></a></li>
 
-                                                        <li><a href="cart.html"><i class="icon-handbag icons"></i></a></li>
+                                                        <li><a href="{{ route('cart') }}"><i class="icon-handbag icons"></i></a></li>
 
                                                         <li><a href="#"><i class="icon-shuffle icons"></i></a></li>
                                                     </ul>
@@ -382,8 +382,9 @@
                                         </div>
                                         <!-- End Single Product -->
                                     </div>
+                                      <!-- End Product grid-View -->
 
-
+                                      <!-- Start Product list-View -->
                                     <div role="tabpanel" id="list-view" class="single-grid-view tab-pane fade clearfix">
                                         <div class="col-xs-12">
                                             <div class="ht__list__wrap">
@@ -490,6 +491,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                      <!-- End Product View -->
                                 </div>
                             </div>
                             <!-- End Product View -->
@@ -512,7 +514,7 @@
                     <div class="col-lg-3 col-lg-pull-9 col-md-3 col-md-pull-9 col-sm-12 col-xs-12 smt-40 xmt-40">
                         <div class="htc__product__leftsidebar">
                             <!-- Start Prize Range -->
-                            <div class="htc-grid-range">
+                            {{-- <div class="htc-grid-range">
                                 <h4 class="title__line--4">Price</h4>
                                 <div class="content-shopby">
                                     <div class="price_filter s-filter clear">
@@ -531,29 +533,18 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <!-- End Prize Range -->
 
                             <!-- Start Category Area -->
                             <div class="htc__category">
                                 <h4 class="title__line--4">categories</h4>
-                                <ul class="ht__cat__list">
-                                    <li><a href="#">Clothing</a></li>
-                                    <li><a href="#">Bags</a></li>
-                                    <li><a href="#">Shoes</a></li>
-                                    <li><a href="#">Jewelry</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Food / Drink Store</a></li>
-                                    <li><a href="#">Gift Store</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Watch</a></li>
-                                    <li><a href="#">Other</a></li>
-                                </ul>
+                               @include('frontend.pages.category.allCategoryName')
                             </div>
                             <!-- End Category Area -->
                             
                             <!-- Start Pro Color -->
-                            <div class="ht__pro__color">
+                            {{-- <div class="ht__pro__color">
                                 <h4 class="title__line--4">color</h4>
                                 <ul class="ht__color__list">
                                     <li class="grey"><a href="#">grey</a></li>
@@ -563,10 +554,10 @@
                                     <li class="black"><a href="#">black</a></li>
                                     <li class="pink"><a href="#">pink</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- End Pro Color -->
                             <!-- Start Pro Size -->
-                            <div class="ht__pro__size">
+                            {{-- <div class="ht__pro__size">
                                 <h4 class="title__line--4">Size</h4>
                                 <ul class="ht__size__list">
                                     <li><a href="#">xs</a></li>
@@ -575,10 +566,10 @@
                                     <li><a href="#">reld</a></li>
                                     <li><a href="#">xl</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- End Pro Size -->
                             <!-- Start Tag Area -->
-                            <div class="htc__tag">
+                            {{-- <div class="htc__tag">
                                 <h4 class="title__line--4">tags</h4>
                                 <ul class="ht__tag__list">
                                     <li><a href="#">Clothing</a></li>
@@ -591,10 +582,10 @@
                                     <li><a href="#">Watch</a></li>
                                     <li><a href="#">Other</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- End Tag Area -->
                             <!-- Start Compare Area -->
-                            <div class="htc__compare__area">
+                            {{-- <div class="htc__compare__area">
                                 <h4 class="title__line--4">compare</h4>
                                 <ul class="htc__compare__list">
                                     <li><a href="#">White men’s polo<i class="icon-trash icons"></i></a></li>
@@ -605,84 +596,10 @@
                                     <li><a href="#">clear all</a></li>
                                     <li class="compare"><a href="#">Compare</a></li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <!-- End Compare Area -->
                             <!-- Start Best Sell Area -->
-                            <div class="htc__recent__product">
-                                <h2 class="title__line--4">best seller</h2>
-                                <div class="htc__recent__product__inner">
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details.html">
-                                                <img src="frontend/images/product-2/sm-smg/1.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details.html">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details.html">
-                                                <img src="frontend/images/product-2/sm-smg/2.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details.html">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="htc__best__product">
-                                        <div class="htc__best__pro__thumb">
-                                            <a href="product-details.html">
-                                                <img src="frontend/images/product-2/sm-smg/1.jpg" alt="small product">
-                                            </a>
-                                        </div>
-                                        <div class="htc__best__product__details">
-                                            <h2><a href="product-details.html">Product Title Here</a></h2>
-                                            <ul class="rating">
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                                <li class="old"><i class="icon-star icons"></i></li>
-                                            </ul>
-                                            <ul  class="pro__prize">
-                                                <li class="old__prize">$82.5</li>
-                                                <li>$75.2</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                </div>
-                            </div>
-                            <!-- End Best Sell Area -->
+                            @include('frontend.pages.products.partials.product-grid-bestseller')
                         </div>
                     </div>
                 </div>

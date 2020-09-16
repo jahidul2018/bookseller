@@ -6,7 +6,7 @@
                 <div class="menumenu__container clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                         <div class="logo">
-                             <a href="{{ route('frontend.index') }}"><img src="frontend/images/logo/4.png" alt="logo images"></a>
+                             <a href="{{ route('frontend.index') }}"><img src="{{ asset('frontend/images/logo/4.png') }}" alt="logo images"></a>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
@@ -16,12 +16,12 @@
                                 <li class="drop"><a href="#">shop</a>
                                     <ul class="dropdown mega_dropdown">
                                         <!-- Start Single Mega MEnu -->
-                                        <li><a class="mega__title" href="product-grid.html">Shop Pages</a>
+                                        <li><a class="mega__title" href="#">Shop Pages</a>
                                             <ul class="mega__item">
-                                                <li><a href="product-grid.html">Product Grid</a></li>
-                                                <li><a href="cart.html">cart</a></li>
-                                                <li><a href="checkout.html">checkout</a></li>
-                                                <li><a href="wishlist.html">wishlist</a></li>
+                                                <li><a href="{{ route('product-grid') }}">Product Grid</a></li>
+                                                <li><a href="{{ route('cart') }}">cart</a></li>
+                                                <li><a href="{{ route('checkout') }}">checkout</a></li>
+                                                <li><a href="{{ route('wishlist') }}">wishlist</a></li>
                                             </ul>
                                         </li>
                                         <!-- End Single Mega MEnu -->
@@ -30,9 +30,9 @@
                                             <ul class="mega__item">
                                                 <li><a href="#">Category</a></li>
                                                 <li><a href="#">My Account</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="cart.html">Shopping Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
+                                                <li><a href="{{ route('cart') }}">Shopping Cart</a></li>
+                                                <li><a href="{{ route('checkout') }}">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <!-- End Single Mega MEnu -->
@@ -49,7 +49,7 @@
                                         <!-- End Single Mega MEnu -->
                                     </ul>
                                 </li>
-                                <li class="drop"><a href="#">men</a>
+                                {{-- <li class="drop"><a href="#">men</a>
                                     <ul class="dropdown mega_dropdown">
                                         <!-- Start Single Mega MEnu -->
                                         <li><a class="mega__title" href="product-grid.html">Shop Pages</a>
@@ -84,29 +84,29 @@
                                         </li>
                                         <!-- End Single Mega MEnu -->
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="drop"><a href="#">Product</a>
                                     <ul class="dropdown">
-                                        <li><a href="product-grid.html">Product Grid</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li>
+                                        <li><a href="{{ route('product-grid') }}">Product Grid</a></li>
+                                        {{-- <li><a href="product-details.html">Product Details</a></li> --}}
                                     </ul>
                                 </li>
-                                <li class="drop"><a href="blog.html">blog</a>
+                                {{-- <li class="drop"><a href="blog.html">blog</a>
                                     <ul class="dropdown">
                                         <li><a href="blog.html">Blog Grid</a></li>
                                         <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="drop"><a href="#">Pages</a>
                                     <ul class="dropdown">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                        <li><a href="cart.html">Cart page</a></li>
-                                        <li><a href="checkout.html">checkout</a></li>
-                                        <li><a href="contact.html">contact</a></li>
-                                        <li><a href="product-grid.html">product grid</a></li>
-                                        <li><a href="product-details.html">product details</a></li>
-                                        <li><a href="wishlist.html">wishlist</a></li>
+                                        <li><a href="{{ route('blog') }}">Blog</a></li>
+                                        <li><a href="{{ route('blog-details') }}">Blog Details</a></li>
+                                        <li><a href="{{ route('cart') }}">Cart page</a></li>
+                                        <li><a href="{{ route('checkout') }}">Checkout</a></li>
+                                        <li><a href="{{ route('contact') }}">contact</a></li>
+                                        <li><a href="{{ route('product-grid') }}">Product Grid</a></li>
+                                        <li><a href="{{ route('product-details') }}">product details</a></li>
+                                        <li><a href="{{ route('wishlist') }}">wishlist</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="contact.html">contact</a></li>
@@ -120,17 +120,17 @@
                                     <li><a href="blog.html">blog</a></li>
                                     <li><a href="#">pages</a>
                                         <ul>
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                            <li><a href="cart.html">Cart page</a></li>
-                                            <li><a href="checkout.html">checkout</a></li>
-                                            <li><a href="contact.html">contact</a></li>
-                                            <li><a href="product-grid.html">product grid</a></li>
-                                            <li><a href="product-details.html">product details</a></li>
-                                            <li><a href="wishlist.html">wishlist</a></li>
+                                            <li><a href="{{ route('blog') }}">Blog</a></li>
+                                        <li><a href="{{ route('blog-details') }}">Blog Details</a></li>
+                                        <li><a href="{{ route('cart') }}">Cart page</a></li>
+                                        <li><a href="{{ route('checkout') }}">Checkout</a></li>
+                                        <li><a href="{{ route('contact') }}">contact</a></li>
+                                        <li><a href="{{ route('product-grid') }}">Product Grid</a></li>
+                                        <li><a href="{{ route('product-details') }}">product details</a></li>
+                                        <li><a href="{{ route('wishlist') }}">wishlist</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">contact</a></li>
+                                    <li><a href="{{ route('contact') }}">contact</a></li>
                                 </ul>
                             </nav>
                         </div>  

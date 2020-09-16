@@ -4,25 +4,25 @@
         @include('frontend.partials.slider')
         <!-- Start Slider Area -->
         <!-- Start Category Area -->
-        @include('frontend.partials.category')
+        @include('frontend.pages.products.partials.new-arival')
         <!-- End Category Area -->
         <!-- Start Prize Good Area -->
         @include('frontend.partials.prizegood')
         <!-- End Prize Good Area -->
         <!-- Start Product Area -->
-        @include('frontend.partials.allproducts')
+        @include('frontend.pages.products.partials.best-seller')
         <!-- End Product Area -->
         <!-- Start Testimonial Area -->
-        ;@include('frontend.partials.comment')
+        
         <!-- End Testimonial Area -->
         <!-- Start Top Rated Area -->
-        @include('frontend.partials.toprated')
+        @include('frontend.pages.products.partials.toprated')
         <!-- End Top Rated Area -->
         <!-- Start Brand Area -->
-        @include('frontend.partials.brand')
+        @include('frontend.pages.products.partials.brand-image')
         <!-- End Brand Area -->
         <!-- Start Blog Area -->
-        @include('frontend.partials.blog')
+        @include('frontend.pages.products.partials.product-blog')
         <!-- End Blog Area -->
         <!-- End Banner Area -->
         <!-- Start Footer Area -->
